@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 	const images = document.querySelectorAll(".image");
 	let dragElement;
 
-	images.forEach((image), =>{
+	images.forEach((image)=>{
 		image.addEventListener("dragstart", (e)=>{
 			dragElement = e.target;
 			e.dataTransfer.setData("text/plain", "");
